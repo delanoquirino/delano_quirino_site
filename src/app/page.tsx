@@ -1,6 +1,6 @@
 
 export default function Home() {
   return (
-    <div>Ola mundo</div>
+    <div className="h-screen">Ola mundo</div>
   )
 }
