@@ -1,8 +1,8 @@
 import { SkillIcon } from "@/components/SkillIcon"
 
 const About = () => {
-    return <div className="bg-black dark:bg-white md:h-screen">
-        <div className="max-w-7xl m-auto p-5 flex flex-col justify-center items-center bg-black text-white dark:bg-white dark:text-black ">
+    return <main className="bg-black dark:bg-white md:h-screen">
+        <div className="max-w-7xl mx-auto p-5 flex flex-col justify-center items-center bg-black text-white dark:bg-white dark:text-black ">
             <div className="flex flex-col justify-center items-center gap-4 mt-20">
                 <h1 className="text-4xl">Sobre Mim</h1>
                 <p className="text-xl">Aqui você encontrará mais informações sobre mim e quais minhas habilidades relacionadas ao desenvolvimento web.</p>
@@ -21,7 +21,7 @@ const About = () => {
             </div>
             </div>
         </div>
-    </div>
+    </main>
   }
   
   export default About

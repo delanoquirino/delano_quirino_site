@@ -28,7 +28,7 @@ export const ToggleTheme = () => {
     },[isChecked])
 
   return (
-    <Switch  defaultChecked onChange={(checked: boolean) => toggleThemeMode (checked)} size="small"/>
+    <Switch className="bg-slate-700"  defaultChecked onChange={(checked: boolean) => toggleThemeMode (checked)} size="small"/>
     
   )
 }
