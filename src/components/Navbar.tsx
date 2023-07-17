@@ -56,7 +56,7 @@ interface LinkItem {
           {nav ? <FaTimes /> : <FaBars />}
       </div>
       {nav && (
-        <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-full bg-black dark:bg-white">
+        <ul className="h-full flex flex-col justify-center items-center absolute top-0 left-0 w-full  bg-black dark:bg-white">
           {links.map(({ id, name, link }) => (
             <li
               key={id}
