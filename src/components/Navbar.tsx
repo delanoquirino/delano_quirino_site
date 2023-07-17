@@ -52,15 +52,15 @@ interface LinkItem {
           </li>
         ))}
       </ul>
-      <div onClick={() => setNav(!nav)} className="cursor-pointer md:hidden z-10">
-          {nav ? <FaTimes/> : <FaBars/>}
+      <div onClick={() => setNav(!nav)} className="cursor-pointer md:hidden z-10 ">
+          {nav ? <FaTimes /> : <FaBars />}
       </div>
       {nav && (
-        <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-black">
+        <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-full bg-black dark:bg-white">
           {links.map(({ id, name, link }) => (
             <li
               key={id}
-              className="px-4 cursor-pointer text-white uppercase py-6 text-4xl bold hover:scale-125 hover:brightness-115 hover:font-semibold"
+              className="px-4 cursor-pointer text-white dark:text-black uppercase py-6 text-4xl bold hover:scale-125 hover:brightness-115 hover:font-semibold"
             >
               <Link   onClick={() => setNav(!nav)} href={link}>
                 {name}
