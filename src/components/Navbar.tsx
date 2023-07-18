@@ -27,8 +27,8 @@ interface LinkItem {
       },
       {
         id: 3,
-        name: "portfolio",
-        link: "portfolio"
+        name: "projects",
+        link: "projects"
       },
       {
         id: 5,

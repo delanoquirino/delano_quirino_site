@@ -13,7 +13,7 @@ export const SocialLinks = () => {
   return (
     <div className="flex gap-5 ">
         {links.map((link, index) => (
-            <a className="text-sky-500  transition duration-300 ease-in-out hover:scale-125 hover:brightness-125" key={index} href={link.url}>{link.icon}</a>
+            <a className="text-sky-500 transition duration-300 ease-in-out scale-125 hover:scale-150 hover:brightness-125" key={index} href={link.url} target="_blank">{link.icon}</a>
         ))}
         
     </div>
