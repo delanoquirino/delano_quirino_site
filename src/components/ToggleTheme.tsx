@@ -4,8 +4,7 @@ import {useState,useEffect} from "react"
 
 export const ToggleTheme = () => {
     const [isChecked, setIsChecked] = useState(false)
-    console.log(isChecked)
-    
+        
     function toggleThemeMode  (checked: boolean) {
         if (checked) {
             localStorage.theme = "dark"
