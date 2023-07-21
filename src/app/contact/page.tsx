@@ -13,7 +13,7 @@ const Contact = () => {
             <p className='text-white dark:text-black text-xl leading-8'>
               Fico feliz em saber que você está interessado em entrar em contato
               comigo. Se você tem alguma dúvida, deseja colaborar em um projeto ou
-              simplesmente quer dizer Oi, acesse minhas redes sociais ou mande um mensagema atraves do formularioesta é a página certa para isso.
+              simplesmente quer dizer Oi, acesse minhas redes sociais ou mande um mensagema através do formulário.
             </p>
             <SocialLinks/>
           </div>

@@ -9,7 +9,7 @@ const Projects = () => {
     <div className="bg-black dark:bg-white">
       <div className="max-w-7xl mx-auto py-20">
         <h1 className="text-4xl text-center text-white dark:text-black">Projetos</h1>
-        <div className="flex gap-6 md:gap-12 flex-col md:flex-row p-10">
+        <div className="flex gap-6 md:gap-12 flex-col md:flex-row p-2 md:p-10">
           <div className="h-full">
             <Image
               width={520}
@@ -54,7 +54,7 @@ const Projects = () => {
         <div className="max-w-7xl mx-auto">
           <Divider className="bg-[#414244] h-[1px] " />
         </div>
-        <div className="flex gap-6 md:gap-12 flex-col md:flex-row p-10">
+        <div className="flex gap-6 md:gap-12 flex-col md:flex-row p-2 md:p-10">
           <div className="h-full">
             <Image
               width={520}
@@ -97,7 +97,7 @@ const Projects = () => {
         <div className="max-w-7xl mx-auto">
           <Divider className="bg-[#414244] h-[1px]" />
         </div>
-        <div className="flex gap-6 md:gap-12 flex-col md:flex-row p-10">
+        <div className="flex gap-6 md:gap-12 flex-col md:flex-row p-2 md:p-10">
           <div className="h-full">
             <Image
               width={520}
