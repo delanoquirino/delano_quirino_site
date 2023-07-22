@@ -25,10 +25,10 @@ const Form = () => {
         Mensagem:
       </label>
       <textarea
-        type="text" name="message"
+        name="message"
         id=""
-        cols="20"
-        rows="10"
+        cols={20}
+        rows={10}
         className="outline-none border-b border-slate-300"
       ></textarea>
       <button
