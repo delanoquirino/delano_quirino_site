@@ -2,12 +2,12 @@ import { SkillIcon } from "@/components/SkillIcon"
 
 const About = () => {
     return <main className="bg-black dark:bg-white md:h-screen">
-        <div className="max-w-7xl mx-auto p-5 flex flex-col justify-center items-center bg-black text-white dark:bg-white dark:text-black ">
-            <div className="flex flex-col justify-center items-center gap-4 mt-20">
+        <div className="max-w-7xl mx-auto py-20 p-5 flex flex-col justify-center items-center bg-black text-white dark:bg-white dark:text-black ">
+            <div className="flex flex-col justify-center items-center gap-4">
                 <h1 className="text-4xl">Sobre Mim</h1>
                 <p className="text-xl">Aqui você encontrará mais informações sobre mim e quais minhas habilidades relacionadas ao desenvolvimento web.</p>
             </div>
-            <div className="flex flex-col justify-between mx-auto md:flex-row mt-20">
+            <div className="flex flex-col justify-between gap-2 mx-auto md:flex-row mt-20">
                 <div className="w-full md:w-[65%]">
                     <h2 className="mb-10 text-3xl bold">Conheça-me!</h2>
                     <p className="text-base">Sou um desenvolvedor web frontend apaixonado por construir interfaces para sites e aplicativos. Meus projetos você pode conferir na page Portfolio</p>
