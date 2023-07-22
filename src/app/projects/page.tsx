@@ -78,12 +78,12 @@ const Projects = () => {
               <TechBadge name="React Scroll" />
             </div>
             <div className="flex justify-start items-center gap-5">
-            <button className="text-sky-700 px-3 py-1 flex items-center justify-center rounded-md border-[1px] border-cyan-500 hover:bg-gradient-to-r from-cyan-500 to-sky-500 cursor-pointer transition duration-300 ease-in-out hover:scale-110 hover:brightness-125">
+            <button className="text-sky-700 px-3 py-1 flex items-center justify-center rounded-lg border-[1px] border-cyan-500 hover:bg-gradient-to-r from-cyan-500 to-sky-500 cursor-pointer transition duration-300 ease-in-out hover:scale-110 hover:brightness-125">
                 <a href="https://ammadv.vercel.app/" target="_blank">
                   Site
                 </a>
               </button>
-              <button className="text-sky-700 px-3 py-1 flex items-center justify-center rounded-md border-[1px] border-cyan-500 hover:bg-gradient-to-r from-cyan-500 to-sky-500 cursor-pointer transition duration-300 ease-in-out hover:scale-110 hover:brightness-125">
+              <button className="text-sky-700 px-3 py-1 flex items-center justify-center rounded-lg border-[1px] border-cyan-500 hover:bg-gradient-to-r from-cyan-500 to-sky-500 cursor-pointer transition duration-300 ease-in-out hover:scale-110 hover:brightness-125">
                 <a
                   href="https://github.com/delanoquirino/ammadv"
                   target="_blank"
