@@ -8,6 +8,7 @@ import github from "../../public/iconskill/github.png";
 import tailwind from "../../public/iconskill/tailwind.png";
 import chakra from "../../public/iconskill/chakra.png";
 import typescript from "../../public/iconskill/typescript.png";
+import jest from "../../public/iconskill/jest.png";
 import Image from "next/image";
 
 export const SkillIcon = () => {
@@ -65,6 +66,11 @@ export const SkillIcon = () => {
           src: typescript,
           title: "Typescript",
           style: "shadow-blue-500",
+        },{
+          id: 10,
+          src: jest,
+          title: "Jest",
+          style: "shadow-[#99425B]",
         },
       ];
   return (
