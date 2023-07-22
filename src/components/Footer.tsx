@@ -16,7 +16,7 @@ export const Footer = () => {
                 <div className='flex flex-col gap-1'>
                   <h2 className='font-bold'>SOCIAL</h2>
                   <div>
-                    <SocialLinks/>
+                  <SocialLinks  />
                   </div>
                 </div>
             </div>
