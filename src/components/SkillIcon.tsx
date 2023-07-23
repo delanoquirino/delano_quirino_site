@@ -50,13 +50,13 @@ export const SkillIcon = () => {
           style: "shadow-white",
         },
         {
-          id: 8,
+          id: 7,
           src: github,
           title: "GitHub",
           style: "shadow-gray-400",
         },
         {
-          id: 9,
+          id: 8,
           src: chakra,
           title: "ChakraUI",
           style: "shadow-sky-400",
@@ -77,10 +77,10 @@ export const SkillIcon = () => {
     
    
       <div
-        className="w-full grid grid-cols-2 sm:grid-cols-3 gap-7 text-center sm:px-4"
+        className="w-full grid grid-cols-2 sm:grid-cols-3 gap-7 text-center sm:px-4" 
       >
         {techs.map(({ id, src, title, style }) => (
-      <div key={id} className={`shadow-md  hover:scale-105 duration-500 p-2 rounded-lg ${style} brightness-75 hover:brightness-125 dark:hover:brightness-100`}>
+      <div  key={id} className={`shadow-md  hover:scale-105 duration-500 p-2 rounded-lg ${style} brightness-75 hover:brightness-125 dark:hover:brightness-100`}>
         <Image src={src} alt="Icone de Skill" className="w-10 mx-auto" />
         <p className="text-base sm:text-lg md:text-xl mt-1">{title}</p>
       </div>

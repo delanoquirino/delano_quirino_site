@@ -10,7 +10,7 @@ const Contact = () => {
         <div>
           <div className="flex gap-6 md:gap-12 flex-col md:flex-row p-2 md:p-10 ">
           
-            <div className="flex flex-col gap-8 md:w-[60%] w-full bg-white dark:bg-black text-black dark:text-white px-5 py-8 md:px-8 md:py-12 shadow-lg shadow-slate-500 rounded-lg">
+            <div data-aos="fade-right" data-aos-offset="100" className="flex flex-col gap-8 md:w-[60%] w-full bg-white dark:bg-black text-black dark:text-white px-5 py-8 md:px-8 md:py-12 shadow-lg shadow-slate-500 rounded-lg">
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold leading-10">
                 Você tem algum Projeto? Vamos conversar
               </h2>
