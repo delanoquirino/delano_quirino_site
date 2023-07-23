@@ -10,11 +10,6 @@ import AOS from '@/animation/aos';
 
 const jost = Jost({ subsets: ['latin'] })
 
-export const metadata: Metadata = {
-  title: 'Delano Quirino',
-  description: 'Meu Portfolio',
-}
-
 export default function RootLayout({
   children,
 }: {
