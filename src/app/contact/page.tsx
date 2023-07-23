@@ -1,3 +1,5 @@
+"use client"
+
 import AOS from "@/animation/aos";
 import Form from "@/components/Form";
 import { SocialLinks } from "@/components/SocialLinks";

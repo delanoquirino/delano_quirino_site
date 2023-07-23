@@ -1,4 +1,4 @@
-
+"use client"
 import Link from "next/link";
 import AOS from '@/animation/aos';
 import { useEffect } from "react";

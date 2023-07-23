@@ -1,3 +1,5 @@
+"use client"
+
 import AOS from "@/animation/aos";
 import { SkillIcon } from "@/components/SkillIcon";
 import { useEffect } from "react";
