@@ -3,7 +3,6 @@
 import { useEffect } from 'react';
 import { Header } from '@/components/Header'
 import '@/styles/globals.css'
-import type { Metadata } from 'next'
 import { Jost } from 'next/font/google'
 import { Footer } from '@/components/Footer'
 import AOS from '@/animation/aos';
