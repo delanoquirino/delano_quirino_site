@@ -5,8 +5,18 @@ import CardProject from "@/components/CardProject";
 import { Divider } from "antd";
 
 import projects from "@/data/projects/projects";
+import { useEffect } from "react";
+import AOS from "@/animation/aos";
 
 const Projects = () => {
+  useEffect(() => {
+    AOS.init({
+      offset: 100,
+      duration: 800,
+      easing: 'ease-in-out',
+      once: true,
+    });
+  }, []);
   return (
     <div className="bg-black dark:bg-white">
       <div className="max-w-7xl mx-auto py-32" >

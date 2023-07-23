@@ -1,8 +1,17 @@
 
 import Link from "next/link";
-
+import AOS from '@/animation/aos';
+import { useEffect } from "react";
 
 export default function Home() {
+  useEffect(() => {
+    AOS.init({
+      offset: 100,
+      duration: 800,
+      easing: 'ease-in-out',
+      once: true,
+    });
+  }, []);
   return (
     <main className="h-screen  bg-black dark:bg-white dark:text-black transition duration-300 ease-in-out " data-aos="fade-up"
     data-aos-offset="100">

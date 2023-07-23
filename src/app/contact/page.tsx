@@ -1,8 +1,17 @@
+import AOS from "@/animation/aos";
 import Form from "@/components/Form";
 import { SocialLinks } from "@/components/SocialLinks";
-import React from "react";
+import React, { useEffect } from "react";
 
 const Contact = () => {
+  useEffect(() => {
+    AOS.init({
+      offset: 100,
+      duration: 800,
+      easing: 'ease-in-out',
+      once: true,
+    });
+  }, []);
   return (
     <div className="bg-black dark:bg-white transition duration-300 ease-in-out">
       <div className="h-full md:h-screen max-w-7xl mx-auto py-20 flex justify-center items-center">

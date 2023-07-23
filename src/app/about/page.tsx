@@ -1,6 +1,16 @@
+import AOS from "@/animation/aos";
 import { SkillIcon } from "@/components/SkillIcon";
+import { useEffect } from "react";
 
 const About = () => {
+  useEffect(() => {
+    AOS.init({
+      offset: 100,
+      duration: 800,
+      easing: 'ease-in-out',
+      once: true,
+    });
+  }, []);
   return (
     <main className="bg-black dark:bg-white">
       <div className="max-w-7xl mx-auto py-32 p-5 flex flex-col justify-center items-center bg-black text-white dark:bg-white dark:text-black ">
