@@ -6,6 +6,7 @@ const Form = () => {
       className="md:w-[60%] w-full p-2 md:p-5 transition duration-300 ease-in-out"
       action="https://getform.io/f/346fd422-917a-4f04-ad2d-91aa9d4498c0"
       method="POST"
+      data-aos="fade-left" data-aos-offset="100"
     >
     <div className="flex gap-5 flex-col px-2 py-5 md:px-5 md:py-10">
       

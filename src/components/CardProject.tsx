@@ -11,7 +11,8 @@ interface CardProjectProps {
   }
 const CardProject = ({ title, description, imageSrc, siteLink, githubLink, techBadges }:CardProjectProps) => {
   return (
-    <div className="flex md:gap-12 flex-col md:flex-row p-4 md:p-5 mt-10 md:mt-20">
+    <div data-aos="fade-up"
+    data-aos-offset="100" className="flex md:gap-12 flex-col md:flex-row p-4 md:p-5 mt-10">
       <div className="h-full">
         <Image
           width={520}

@@ -2,7 +2,7 @@ import { SkillIcon } from "@/components/SkillIcon";
 
 const About = () => {
   return (
-    <main className="bg-black dark:bg-white md:h-screen ">
+    <main className="bg-black dark:bg-white">
       <div className="max-w-7xl mx-auto py-32 p-5 flex flex-col justify-center items-center bg-black text-white dark:bg-white dark:text-black ">
         <div
           data-aos="fade-down"
@@ -17,7 +17,7 @@ const About = () => {
             habilidades relacionadas ao desenvolvimento web.
           </p>
         </div>
-        <div className="flex flex-col justify-between gap-4 mx-auto md:flex-row mt-10 md:mt-20">
+        <div className="flex flex-col justify-between gap-4 mx-auto md:flex-row mt-10">
           <div className="w-full md:w-[50%]" data-aos="fade-right">
             <h2 className="mb-5 md:mb-10 text-2xl sm:text-3xl md:text-4xl font-semibold text-center">
               Conheça-me!
