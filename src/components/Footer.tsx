@@ -6,7 +6,7 @@ import { SocialLinks } from './SocialLinks'
 export const Footer = () => {
   return (
     <div className='bg-black dark:bg-white transition duration-300 ease-in-out'>
-        <div className='max-w-7xl p-7 m-auto text-white dark:text-black'>
+        <div className='max-w-7xl p-2 md:p-7 m-auto text-white dark:text-black'>
             <div className='flex flex-col justify-between sm:flex-row gap-3'>
                 <div className='flex flex-col gap-1'>
                     <h2 className='font-bold'>DELANO QUIRINO</h2>
