@@ -8,12 +8,12 @@ const projects = [
       techBadges: ["Next.js", "Tailwind", "Typescript", "React Hook Form", "React Icons", "React Scroll"]
     },
     {
-      title: "Escritório Amorim, Moura & Martins",
-      description: "Site criado para o Escritório Amorim, Moura & Martins.",
-      imageSrc: "/projects/ammadvfoto1.png",
-      siteLink: "https://ammadv.vercel.app/",
-      githubLink: "https://github.com/delanoquirino/ammadv",
-      techBadges: ["Next.js", "Styled Components", "React Icons", "React Scroll"]
+      title: "Landing Page Leadster",
+      description: "Projeto para a vaga de Desenvolvedor Front-end da Leadster",
+      imageSrc: "/projects/leadster.png",
+      siteLink: "https://teste-leadster-two.vercel.app/",
+      githubLink: "https://github.com/delanoquirino/teste-leadster",
+      techBadges: ["Typescript", "Styled Components", "Next.js", "AntDesign", "React Icons"]
     },
     {
       title: "CineMovie",
