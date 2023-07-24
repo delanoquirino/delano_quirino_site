@@ -16,7 +16,7 @@ const Contact = () => {
   }, []);
   return (
     <div className="bg-black dark:bg-white transition duration-300 ease-in-out">
-      <div className="h-full md:h-screen max-w-7xl mx-auto py-20 flex justify-center items-center">
+      <div className="h-full max-w-7xl mx-auto py-32 flex justify-center items-center">
       
         <div>
           <div>
@@ -28,7 +28,7 @@ const Contact = () => {
             Contact
           </h1>
           </div>
-          <div className="flex gap-6 md:gap-12 flex-col md:flex-row p-2 md:p-10 ">
+          <div className="flex gap-6 md:gap-12 flex-col md:flex-row p-2 md:p-10 mt-10 md:m-0">
             
             <div
               data-aos="fade-right"

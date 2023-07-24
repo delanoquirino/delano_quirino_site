@@ -30,7 +30,7 @@ const About = () => {
           </p>
         </div>
         <div className="flex flex-col justify-between gap-4 mx-auto md:flex-row mt-10">
-          <div className="w-full md:w-[50%]" data-aos="fade-right">
+          <div className="w-full md:w-[65%]" data-aos="fade-right">
             <h2 className="mb-5 md:mb-10 text-2xl sm:text-3xl md:text-4xl font-semibold text-center">
               Conheça-me!
             </h2>
