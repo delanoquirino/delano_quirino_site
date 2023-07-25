@@ -21,8 +21,8 @@ const About = () => {
           data-aos-offset="100"
           className="flex flex-col justify-center items-center gap-4"
         >
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold">
-            Sobre Mim
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold">
+            About
           </h1>
           <p className="text-base sm:text-lg md:text-xl">
             Aqui você encontrará mais informações sobre mim e quais minhas

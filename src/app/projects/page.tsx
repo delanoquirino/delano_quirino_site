@@ -23,9 +23,9 @@ const Projects = () => {
         <h1
           data-aos="fade-down"
           data-aos-offset="100"
-          className="text-4xl sm:text-5xl md:text-6xl font-bold text-center text-white dark:text-black"
+          className="text-3xl sm:text-4xl md:text-5xl font-bold text-center text-white dark:text-black"
         >
-          Projetos
+          Projects
         </h1>
         {projects.map((project, index) => (
           <>
