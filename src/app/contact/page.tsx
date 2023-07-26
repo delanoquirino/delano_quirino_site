@@ -16,10 +16,10 @@ const Contact = () => {
   }, []);
   return (
     <div className=" bg-black dark:bg-white transition duration-300 ease-in-out">
-      <div className="max-w-7xl mx-auto py-32 flex justify-center items-center">
+      <div className="max-w-7xl mx-auto py-28 flex justify-center items-center">
       
-        <div>
-          <div>
+        <div >
+          
           <h1
             data-aos="fade-down"
             data-aos-offset="100"
@@ -27,13 +27,13 @@ const Contact = () => {
           >
             Contact
           </h1>
-          </div>
-          <div className=" flex gap-6 items-center md:gap-12 flex-col md:flex-row p-2 md:p-10 mt-10 md:m-0">
+          
+          <div className=" flex gap-6 items-center md:gap-12 flex-col md:flex-row p-4 md:p-2 mt-5 md:m-0">
             
             <div
               data-aos="fade-right"
               data-aos-offset="100"
-              className="h-fit flex flex-col gap-8 md:w-[60%] w-full bg-white dark:bg-black text-black dark:text-white px-5 py-8 md:px-8 md:py-12 shadow-lg shadow-slate-500 rounded-lg"
+              className="h-fit flex flex-col gap-8 md:w-[60%] w-full bg-white dark:bg-black text-black dark:text-white p-5 md:px-8 md:py-12 shadow-lg shadow-slate-500 rounded-lg"
             >
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold leading-10">
                 Você tem algum Projeto? Vamos conversar
