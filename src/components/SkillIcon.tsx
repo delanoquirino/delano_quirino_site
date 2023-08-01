@@ -80,7 +80,7 @@ export const SkillIcon = () => {
         className="w-full grid grid-cols-2 sm:grid-cols-3 gap-7 text-center sm:px-4" 
       >
         {techs.map(({ id, src, title, style }) => (
-      <div  key={id} className={`shadow-md  hover:scale-105 duration-500 p-1 rounded-lg shadow-${style} brightness-75 hover:brightness-125 dark:hover:brightness-100`}>
+      <div  key={id} className={`shadow-md  hover:scale-105 duration-500 p-1 rounded-lg ${style} brightness-75 hover:brightness-125 dark:hover:brightness-100`}>
         <Image src={src} alt="Icone de Skill" className="w-7 mx-auto" />
         <p className="text-base sm:text-base md:text-lg mt-1">{title}</p>
       </div>
