@@ -32,7 +32,7 @@ const Form = () => {
         ></textarea>
         <button
           type="submit"
-          className="text-sky-700 px-3 py-1 flex items-center justify-center rounded-md border-[1px] border-cyan-500 hover:bg-gradient-to-r from-cyan-500 to-sky-500 cursor-pointer transition duration-300 ease-in-out hover:brightness-125"
+          className="text-sky-700  px-3 py-1 flex items-center justify-center rounded-md border-[1px] border-sky-500 hover:bg-gradient-to-r from-sky-500 to-sky-500 cursor-pointer transition duration-300 ease-in-out hover:brightness-125"
         >
           Enviar
         </button>

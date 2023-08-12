@@ -32,6 +32,11 @@ interface LinkItem {
       },
       {
         id: 5,
+        name: "blog",
+        link: "blog"
+      },
+      {
+        id: 6,
         name: "contact",
         link: "contact"
       },
@@ -44,7 +49,7 @@ interface LinkItem {
         {links.map(({ id, name, link }: LinkItem) => (
           <li
             key={id}
-            className="px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 hover:brightness-125 duration-200"
+            className="px-4 cursor-pointer capitalize font-medium text-white dark:text-black hover:text-sky-500 dark:hover:text-sky-500 hover:scale-105 duration-200"
           >
             <Link href={link}>
               {name}
@@ -62,7 +67,7 @@ interface LinkItem {
           {links.map(({ id, name, link }) => (
             <li
               key={id}
-              className="text-base px-4 cursor-pointer text-white dark:text-black uppercase py-6  hover:scale-125 hover:brightness-115 hover:font-semibold"
+              className="text-base px-4 cursor-pointer text-white dark:text-black uppercase py-6  hover:text-sky-500 dark:hover:text-sky-500 hover:scale-125 hover:font-semibold"
             >
               <Link className="sm:text-lg md:text-xl bold"  onClick={() => setNav(!nav)} href={link}>
                 {name}
