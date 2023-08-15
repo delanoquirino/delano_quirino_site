@@ -8,13 +8,14 @@ type PostProps = {
     slug: string
   }
 }
-  
+
 const getPostDetails = async (slug: string): Promise<PagePostProps> => {
   const GET_POST = `
   query GetPost() {
     post(where: { slug: "${slug}"}) {
       id
       title
+      slug
       content {
         json
       }
@@ -34,13 +35,15 @@ return fetchHygraphQuery(
 )
 }
 
-export default async function Post({params: {slug}}) {
-  const {post} = await getPostDetails(slug);
-  console.log(post)
+
+
+export default async function Post({params: {slug}}: PostProps) {
+  const {posts} = await getPostDetails(slug);
+  console.log(posts)
   return (
     
       <>
-        <PostBlog posts={post}/>
+        <PostBlog posts={posts}/>
       </>
   );
 };
