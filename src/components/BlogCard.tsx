@@ -9,12 +9,14 @@ interface BlogCardProps {
   author:string;
   createdAt:string;
   urlImage:string;
+  slug:string
 }
 
-export const BlogCard = ({title, subtitle, author, createdAt, urlImage}: BlogCardProps) => {
+export const BlogCard = ({title, subtitle, author, createdAt, urlImage, slug}: BlogCardProps) => {
+  
   return (
     <Link
-      href="/blog/post"
+      href={`/blog/${slug}`}
       className="h-full text-white dark:text-black flex flex-col items-start gap-2 transition duration-300 ease-in-out "
     >
       <div className="flex flex-col w-full rounded-3xl hover:shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)]  transition duration-300 ease-in-out p-4 gap-2">

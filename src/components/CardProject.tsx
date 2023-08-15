@@ -19,11 +19,11 @@ const CardProject = ({
 }: CardProjectProps) => {
   return (
     <div
-      data-aos="fade-up"
-      data-aos-offset="100"
+      
       className="flex gap-2 lg:gap-12 flex-col lg:flex-row p-4 md:p-5 mt-10"
     >
-      <div className="h-full">
+      <div className="h-full" data-aos="fade-right"
+      data-aos-offset="100">
         <Image
           width={420}
           height={304}
@@ -33,7 +33,8 @@ const CardProject = ({
           className="w-full md:min-h-full rounded-lg"
         />
       </div>
-      <div className="flex flex-col items-start">
+      <div className="flex flex-col items-start" data-aos="fade-left"
+      data-aos-offset="100">
         <h2 className="text-2xl sm:text-3xl mt-2 sm:mt-1 md:text-4xl  font-semibold dark:text-slate-700 text-white">
           {title}
         </h2>
