@@ -19,8 +19,8 @@ export const BlogCard = ({title, subtitle, author, createdAt, urlImage, slug}: B
       href={`/blog/${slug}`}
       className="h-full text-white dark:text-black flex flex-col items-start gap-2 transition duration-300 ease-in-out "
     >
-      <div className="flex flex-col w-full rounded-3xl hover:shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)]  transition duration-300 ease-in-out p-4 gap-2">
-        <div className="flex flex-1 w-full h-[334px] rounded-2xl">
+      <div className="flex flex-col w-full rounded-3xl hover:shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)]  transition duration-300 ease-in-out p-4 gap-2 border-2 border-sky-500">
+        <div className="flex flex-1 w-full h-[334px] rounded-2xl ">
           <Image src={urlImage}  
             width={500}
             height={300}

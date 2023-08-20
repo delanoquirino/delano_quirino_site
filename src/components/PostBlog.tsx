@@ -13,7 +13,7 @@ import { PagePostProps } from "@/types/postBlog-info";
 
 
 export const PostBlog = ({ posts }:PagePostProps) => {
-    
+    console.log(posts.coverImage.url)
     return (
       <div className="h-full w-full bg-black dark:bg-white transition duration-300 ease-in-out">
       <div className="max-w-7xl mx-auto py-28 text-white dark:text-black p-5">

@@ -4,7 +4,6 @@ import Image from "next/image";
 
 import { BlogCard } from "@/components/BlogCard";
 import Link from "next/link";
-import { Divider } from "antd";
 import { EmptyPost } from "@/components/EmptyPost";
 import { format } from "date-fns";
 import ptBR from "date-fns/locale/pt-BR";
@@ -51,7 +50,7 @@ export const PageBlog = ({ posts }:PageBlogProps ) => {
                 </div>
               </div>
             </Link>
-            <Divider className="bg-sky-500  h-[1px]" />
+            
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
               {posts.map((post, index) => {
                 if (index !== 0) {
