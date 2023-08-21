@@ -3,10 +3,10 @@ import { fetchHygraphQuery } from "@/utils/fetch-hygraph-query";
 import { PostBlog } from "@/components/PostBlog";
 import { PagePostProps } from "@/types/postBlog-info";
 
-type PostProps = {
+interface PostParams {
   params: {
-    slug: string
-  }
+    slug: string;
+  };
 }
 
 const getPostDetails = async (slug: string): Promise<PagePostProps> => {
@@ -37,7 +37,7 @@ return fetchHygraphQuery(
 
 
 
-export default async function Post({params: {slug}}: PostProps) {
+export default async function Post({params: {slug}}: PostParams) {
   const {post} = await getPostDetails(slug);
   console.log(post)
   return (
