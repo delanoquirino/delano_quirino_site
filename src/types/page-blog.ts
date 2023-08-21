@@ -1,4 +1,4 @@
-export type BlogPost  = {
+export type BlogPageInfo  = {
     
         id: string;
         slug: string;
@@ -11,14 +11,11 @@ export type BlogPost  = {
         author: {
           name: string;
         };
+        
       };
    
   
-  export type BlogPostsInfo = {
-        posts: BlogPost[];
+  export type BlogPageData = {
+        posts: BlogPageInfo;
   };
 
-  export interface PageBlogProps {
-    posts: BlogPostsInfo;
-  }
-  

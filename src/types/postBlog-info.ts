@@ -11,10 +11,20 @@ export type PostsInfo = {
   };
   createdAt: string;
   content: {
-    json: ElementNode[];
+    json: [];
   }
 
 };
+
+export type PostInfoProps = {
+  post: PostsInfo[];
+};
+
+export type PostPageStaticData = {
+  post: {
+    slug: string
+  }[]
+}
 
 export interface PagePostProps {
 posts: PostsInfo;

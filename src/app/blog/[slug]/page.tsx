@@ -1,7 +1,7 @@
 
 import { fetchHygraphQuery } from "@/utils/fetch-hygraph-query";
 import { PostBlog } from "@/components/PostBlog";
-import { PagePostProps } from "@/types/postBlog-info";
+import { PagePostProps, PostPageStaticData } from "@/types/postBlog-info";
 
 interface PostParams {
   params: {
@@ -30,16 +30,17 @@ const getPostDetails = async (slug: string): Promise<PagePostProps> => {
   }
 `
 
+
 return fetchHygraphQuery(
   GET_POST,
+  
 )
 }
 
 
-
 export default async function Post({params: {slug}}: PostParams) {
   const {post} = await getPostDetails(slug as string);
-  console.log(post)
+  
   return (
     
       <>
@@ -47,4 +48,16 @@ export default async function Post({params: {slug}}: PostParams) {
       </>
   );
 };
+
+export async function generateStaticParams() {
+  const query = `
+    query ProjectsSlugQuery() {
+      post(first:100) {
+          slug
+      }
+    }
+  `
+  const {post} = await fetchHygraphQuery<PostPageStaticData>(query)
+  return post
+}
 

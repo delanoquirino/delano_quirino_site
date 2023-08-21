@@ -1,23 +1,29 @@
 
-import { fetchHygraphQuery } from "@/utils/fetch-hygraph-query";
 import { PageBlog } from "@/components/PageBlog";
-import { PageBlogProps } from "@/types/blog-info";
+import { BlogPageData } from "@/types/page-blog";
+import { fetchHygraphQuery } from "@/utils/fetch-hygraph-query";
 
 
-const getPageData = async (): Promise<PageBlogProps> => {
+
+const getPageData = async (): Promise<BlogPageData> => {
   const GET_ALL_POSTS = `
-  query GetAllPosts {
-    posts(orderBy: createdAt_DESC) {
+  query MyQuery {
+    posts(orderBy: publishedAt_DESC){
+      createdAt
       id
-      title
+      publishedAt
       slug
       subtitle
-      createdAt
-      coverImage {
+      title
+      updatedAt
+      coverImage{
         url
       }
       author {
         name
+      }
+      content {
+        json
       }
     }
   }
@@ -30,9 +36,9 @@ return fetchHygraphQuery(
 }
 
 export default async function Blog() {
-  const {posts} = await getPageData();
-    
+  const {posts:BlogData} = await getPageData();
+    console.log(BlogData)
   return (
-    <PageBlog posts={posts}/>
+    <PageBlog blogInfo={BlogData}/>
   );
 }

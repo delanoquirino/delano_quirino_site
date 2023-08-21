@@ -7,10 +7,13 @@ import Link from "next/link";
 import { EmptyPost } from "@/components/EmptyPost";
 import { format } from "date-fns";
 import ptBR from "date-fns/locale/pt-BR";
-import { PageBlogProps } from "@/types/blog-info";
+import { BlogPageInfo } from "@/types/page-blog";
 
-export const PageBlog = ({ posts }:PageBlogProps ) => {
-  console.log(posts)
+type BlogSectionProps = {
+  blogInfo: BlogPageInfo
+}
+
+export const PageBlog = ( {blogInfo}: BlogSectionProps) => {
   
   return (
     <div className="h-full bg-black dark:bg-white transition duration-300 ease-in-out">
@@ -18,15 +21,15 @@ export const PageBlog = ({ posts }:PageBlogProps ) => {
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center text-white dark:text-black">
           Blog
         </h1>
-        {posts ? (
+        {blogInfo ? (
           <>
             <Link
-              href={`/blog/${posts[0]?.slug}`}
+              href={`/blog/${blogInfo[0]?.slug}`}
               className="w-full h-full flex flex-col md:flex-row gap-4 items-center justify-center mt-10 p-5 rounded-3xl hover:hover:shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)] transition duration-300 ease-in-out"
             >
               <div className="flex flex-1  h-[334px] rounded-2xl">
                 <Image
-                  src={posts[0]?.coverImage.url}
+                  src={blogInfo[0]?.coverImage.url}
                   width={700}
                   height={300}
                   objectFit="cover"
@@ -35,14 +38,14 @@ export const PageBlog = ({ posts }:PageBlogProps ) => {
               </div>
               <div className="flex flex-1 h-[334px] flex-col gap-6 ">
                 <h2 className="font-bold text-xl sm:text-2xl md:text-3xl ">
-                  {posts[0]?.title}
+                  {blogInfo[0]?.title}
                 </h2>
-                <p>{posts[0]?.subtitle}</p>
+                <p>{blogInfo[0]?.subtitle}</p>
                 <div>
-                  <p className="font-bold">{posts[0]?.author.name}</p>
+                  <p className="font-bold">{blogInfo[0]?.author.name}</p>
                   <p>
                     {format(
-                      new Date(posts[0]?.createdAt),
+                      new Date(blogInfo[0]?.createdAt),
                       "dd 'de' MMM 'de' yyyy",
                       { locale: ptBR }
                     )}
@@ -52,7 +55,7 @@ export const PageBlog = ({ posts }:PageBlogProps ) => {
             </Link>
             
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
-              {posts.map((post, index) => {
+              {blogInfo.map((post, index) => {
                 if (index !== 0) {
                   return (
                     <BlogCard
