@@ -38,7 +38,7 @@ return fetchHygraphQuery(
 
 
 export default async function Post({params: {slug}}: PostParams) {
-  const {post} = await getPostDetails(slug);
+  const {post} = await getPostDetails(slug as string);
   console.log(post)
   return (
     
