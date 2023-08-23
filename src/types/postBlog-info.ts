@@ -1,5 +1,5 @@
 
-export type PostsInfo = {
+export type PostPageInfo = {
   id: string;
   title: string;
   slug: string
@@ -16,17 +16,12 @@ export type PostsInfo = {
 
 };
 
-export type PostInfoProps = {
-  post: PostsInfo[];
-};
-
 export type PostPageStaticData = {
-  post: {
+  posts: {
     slug: string
   }[]
 }
 
-export interface PagePostProps {
-posts: PostsInfo;
-
-}
+export type PostPageData = {
+  posts: PostPageInfo;
+};

@@ -1,7 +1,7 @@
 
 import { fetchHygraphQuery } from "@/utils/fetch-hygraph-query";
+import { PostPageData, PostPageStaticData } from "@/types/postBlog-info";
 import { PostBlog } from "@/components/PostBlog";
-import { PagePostProps, PostPageStaticData } from "@/types/postBlog-info";
 
 interface PostParams {
   params: {
@@ -9,10 +9,10 @@ interface PostParams {
   };
 }
 
-const getPostDetails = async (slug: string): Promise<PagePostProps> => {
+const getPostDetails = async (slug: string): Promise<PostPageData> => {
   const GET_POST = `
-  query GetPost() {
-    post(where: { slug: "${slug}"}) {
+  query Post() {
+    posts(where: { slug: "${slug}"}) {
       id
       title
       slug
@@ -30,34 +30,33 @@ const getPostDetails = async (slug: string): Promise<PagePostProps> => {
   }
 `
 
-
 return fetchHygraphQuery(
   GET_POST,
-  
+  1000 * 60 * 60 * 24
 )
 }
 
 
 export default async function Post({params: {slug}}: PostParams) {
-  const {post} = await getPostDetails(slug as string);
-  
+  const {posts} = await getPostDetails(slug);
+  console.log(posts)
   return (
-    
-      <>
-        <PostBlog posts={post}/>
-      </>
+      <PostBlog postinfo={posts} />
   );
 };
 
-export async function generateStaticParams() {
+/*export async function generateStaticParams() {
   const query = `
-    query ProjectsSlugQuery() {
-      post(first:100) {
-          slug
+    query ProjectsSlugsQuery() {
+      projects(first: 100) {
+        slug
       }
     }
   `
-  const {post} = await fetchHygraphQuery<PostPageStaticData>(query)
-  return post
+  const { posts } = await fetchHygraphQuery<PostPageStaticData>(query)
+
+  return posts
 }
 
+
+*/

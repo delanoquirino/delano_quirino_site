@@ -37,7 +37,7 @@ return fetchHygraphQuery(
 
 export default async function Blog() {
   const {posts:BlogData} = await getPageData();
-    console.log(BlogData)
+    
   return (
     <PageBlog blogInfo={BlogData}/>
   );
