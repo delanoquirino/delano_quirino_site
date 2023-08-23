@@ -39,7 +39,7 @@ return fetchHygraphQuery(
 
 export default async function Post({params: {slug}}: PostParams) {
   const {posts} = await getPostDetails(slug);
-  console.log(posts)
+  
   return (
       <PostBlog postinfo={posts} />
   );

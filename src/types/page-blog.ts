@@ -16,6 +16,6 @@ export type BlogPageInfo  = {
    
   
   export type BlogPageData = {
-        posts: BlogPageInfo;
+        posts: BlogPageInfo[];
   };
 

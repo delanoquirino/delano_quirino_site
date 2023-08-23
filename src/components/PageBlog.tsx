@@ -10,7 +10,7 @@ import ptBR from "date-fns/locale/pt-BR";
 import { BlogPageInfo } from "@/types/page-blog";
 
 type BlogSectionProps = {
-  blogInfo: BlogPageInfo
+  blogInfo: BlogPageInfo[]
 }
 
 export const PageBlog = ( {blogInfo}: BlogSectionProps) => {

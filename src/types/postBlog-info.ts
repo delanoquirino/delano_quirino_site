@@ -23,5 +23,5 @@ export type PostPageStaticData = {
 }
 
 export type PostPageData = {
-  posts: PostPageInfo;
+  posts: PostPageInfo[];
 };

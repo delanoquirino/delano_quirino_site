@@ -12,11 +12,11 @@ import { RichText } from "@graphcms/rich-text-react-renderer";
 import { PostPageInfo } from "@/types/postBlog-info";
 
 type PostSectionProps = {
-  postinfo: PostPageInfo
+  postinfo: PostPageInfo[]
 }
 
-export const PostBlog = ({ postinfo }:PostSectionProps) => {
-   
+export const PostBlog = ({ postinfo}:PostSectionProps) => {
+    console.log(postinfo[0])
     return (
       <div className="h-full w-full bg-black dark:bg-white transition duration-300 ease-in-out">
       <div className="max-w-7xl mx-auto py-28 text-white dark:text-black p-5">
