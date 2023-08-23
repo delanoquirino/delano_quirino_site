@@ -45,10 +45,10 @@ export default async function Post({params: {slug}}: PostParams) {
   );
 };
 
-/*export async function generateStaticParams() {
+export async function generateStaticParams() {
   const query = `
     query ProjectsSlugsQuery() {
-      projects(first: 100) {
+      posts(first: 100) {
         slug
       }
     }
@@ -59,4 +59,3 @@ export default async function Post({params: {slug}}: PostParams) {
 }
 
 
-*/
