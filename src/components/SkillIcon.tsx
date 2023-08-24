@@ -17,60 +17,60 @@ export const SkillIcon = () => {
           id: 1,
           src: html,
           title: "HTML",
-          style: "shadow-orange-500",
+          style: "orange-500",
         },
         {
           id: 2,
           src: css,
           title: "CSS",
-          style: "shadow-blue-500",
+          style: "blue-500",
         },
         {
           id: 3,
           src: javascript,
           title: "JavaScript",
-          style: "shadow-yellow-500",
+          style: "yellow-500",
         },
         {
           id: 4,
           src: reactImage,
           title: "React",
-          style: "shadow-blue-600",
+          style: "blue-600",
         },
         {
           id: 5,
           src: tailwind,
           title: "Tailwind",
-          style: "shadow-sky-400",
+          style: "[#38BDF8]",
         },
         {
           id: 6,
           src: nextjs,
           title: "Next JS",
-          style: "shadow-white",
+          style: "gray-300",
         },
         {
           id: 7,
           src: github,
           title: "GitHub",
-          style: "shadow-gray-400",
+          style: "gray-300",
         },
         {
           id: 8,
           src: chakra,
           title: "ChakraUI",
-          style: "shadow-sky-400",
+          style: "[#3CC7BE]",
         },
         {
           id: 9,
           src: typescript,
           title: "Typescript",
-          style: "shadow-blue-500",
+          style: "blue-500",
         },{
           id: 10,
           src: jest,
           title: "Jest",
-          style: "shadow-[#99425B]",
+          style: "[#99425B]",
         },
       ];
   return (
@@ -80,7 +80,7 @@ export const SkillIcon = () => {
         className="w-full grid grid-cols-2 sm:grid-cols-3 gap-7 text-center sm:px-4" 
       >
         {techs.map(({ id, src, title, style }) => (
-      <div  key={id} className={`shadow-md  hover:scale-105 duration-500 p-1 rounded-lg ${style} brightness-75 hover:brightness-125 dark:hover:brightness-100`}>
+      <div  key={id}  className={`hover:scale-105 duration-500 p-1 rounded-lg shadow-lg shadow-${style} cursor-pointer  hover:bg-${style}`}>
         <Image src={src} alt="Icone de Skill" className="w-7 mx-auto" />
         <p className="text-base sm:text-base md:text-lg mt-1">{title}</p>
       </div>

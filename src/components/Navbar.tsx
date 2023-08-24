@@ -45,13 +45,13 @@ interface LinkItem {
     return (
       <>
       
-      <ul className="hidden md:flex justify-between">
+      <ul className="hidden md:flex justify-between gap-5 ">
         {links.map(({ id, name, link }: LinkItem) => (
           <li
             key={id}
-            className="px-4 cursor-pointer capitalize font-medium text-white dark:text-black hover:text-sky-500 dark:hover:text-sky-500 hover:scale-105 duration-200"
+            className="cursor-pointer capitalize font-medium text-white dark:text-black hover:text-sky-500 dark:hover:text-sky-500 hover:scale-105 duration-200"
           >
-            <Link href={`../${link}`}>
+            <Link href={`../${link}`} >
               {name}
             </Link>
           </li>
