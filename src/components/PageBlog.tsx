@@ -27,11 +27,11 @@ export const PageBlog = ( {blogInfo}: BlogSectionProps) => {
               href={`/blog/${blogInfo[0]?.slug}`}
               className="w-full h-full flex flex-col md:flex-row gap-4 items-center justify-center mt-10 p-5 rounded-3xl hover:hover:shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)] transition duration-300 ease-in-out"
             >
-              <div className="flex flex-1  h-[334px] rounded-2xl">
+              <div className="flex flex-1  h-[350px] rounded-2xl">
                 <Image
                   src={blogInfo[0]?.coverImage.url}
                   width={700}
-                  height={300}
+                  height={350}
                   objectFit="cover"
                   alt=""
                 />
