@@ -14,8 +14,8 @@ const About = () => {
     });
   }, []);
   return (
-    <main className="bg-black dark:bg-white">
-      <div className="max-w-7xl mx-auto py-32 p-5 flex flex-col justify-center items-center bg-black text-white dark:bg-white dark:text-black ">
+    <main className="min-h-[calc(100vh-15rem)] bg-black dark:bg-white">
+      <div className="max-w-7xl mx-auto p-5 flex flex-col justify-center items-center bg-black text-white dark:bg-white dark:text-black ">
         <div
           data-aos="fade-down"
           data-aos-offset="100"
@@ -55,7 +55,7 @@ const About = () => {
               empolgantes.
             </p>
           </div>
-          <div data-aos="fade-left">
+          <div data-aos="fade-left" className="mb-10 md:mb-0">
             <h2 className="mb-10 text-2xl sm:text-3xl md:text-4xl font-semibold mt-10 md:mt-0 text-center">
               Minhas Habilidades
             </h2>

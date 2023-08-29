@@ -15,8 +15,8 @@ const Contact = () => {
     });
   }, []);
   return (
-    <div className=" bg-black dark:bg-white transition duration-300 ease-in-out">
-      <div className="max-w-7xl mx-auto py-28 flex justify-center items-center">
+    <main className="min-h-[calc(100vh-15rem)] bg-black dark:bg-white transition duration-300 ease-in-out">
+      <div className="max-w-7xl mx-auto flex justify-center items-center">
       
         <div >
           
@@ -53,7 +53,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-    </div>
+    </main>
   );
 };
 
