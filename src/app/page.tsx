@@ -13,7 +13,7 @@ export default function Home() {
     });
   }, []);
   return (
-    <main className="h-[calc(100vh-15rem)] bg-black dark:bg-white dark:text-black transition duration-300 ease-in-out ">
+    <main className="h-[calc(100vh-4rem)] bg-black dark:bg-white dark:text-black transition duration-300 ease-in-out ">
       <div data-aos="fade-up"
     data-aos-offset="100" className="h-full max-w-7xl mx-auto p-5 flex flex-col items-center justify-center gap-10">
         <h1 className="text-white dark:text-slate-600 text-3xl sm:text-5xl md:text-6xl font-bold">Olá! Eu me Chamo Delano</h1>

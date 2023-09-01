@@ -19,7 +19,7 @@ const Projects = () => {
   }, []);
   return (
     <main className="min-h-[calc(100vh-15rem)] bg-black dark:bg-white mb-10 md:mb-0">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl mx-auto py-16 ">
         <h1
           data-aos="fade-down"
           data-aos-offset="100"
