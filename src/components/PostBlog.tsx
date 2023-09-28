@@ -19,7 +19,7 @@ export const PostBlog = ({ postinfo }: PostSectionProps) => {
   console.log(postinfo[0]);
   return (
     <main className="min-h-[calc(100vh-15rem)] w-full bg-black dark:bg-white transition duration-300 ease-in-out ">
-      <div className="max-w-7xl mx-auto text-white dark:text-black p-5">
+      <div className="container text-white dark:text-black p-5">
         <Link
           href="../blog"
           className="text-base sm:text-lg md:text-xl font-bold text-white dark:text-black w-fit flex items-center gap-4 hover:text-sky-500 dark:hover:text-sky-500"

@@ -15,13 +15,13 @@ const About = () => {
   }, []);
   return (
     <main className="min-h-[calc(100vh-4rem)] bg-black dark:bg-white">
-      <div className="max-w-7xl mx-auto px-5 py-20 flex flex-col justify-center items-center bg-black text-white dark:bg-white dark:text-black ">
+      <div className="container flex flex-col justify-center items-center bg-black text-white dark:bg-white dark:text-black ">
         <div
           data-aos="fade-down"
           data-aos-offset="100"
           className="flex flex-col justify-center items-center gap-4"
         >
-          <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-start">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-start">
             About
           </h1>
           <p className="text-base sm:text-lg md:text-xl">
@@ -29,7 +29,7 @@ const About = () => {
             habilidades relacionadas ao desenvolvimento web.
           </p>
         </div>
-        <div className="flex flex-col justify-between gap-4 mx-auto md:flex-row mt-10">
+        <div className="flex flex-col justify-between gap-4 mx-auto md:flex-row md:py-16">
           <div className="w-full md:w-[60%]" data-aos="fade-right">
             <h2 className="mb-5 md:mb-10 text-xl sm:text-2xl md:text-3xl font-semibold text-center">
               Conheça-me!

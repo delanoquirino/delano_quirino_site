@@ -16,8 +16,8 @@ type BlogSectionProps = {
 export const PageBlog = ( {blogInfo}: BlogSectionProps) => {
   console.log(blogInfo)
   return (
-    <main className="min-h-[calc(100vh-15rem)] bg-black dark:bg-white transition duration-300 ease-in-out mb-10">
-      <div className="max-w-7xl mx-auto text-white dark:text-black p-5 py-16">
+    <main className="min-h-[calc(100vh-4rem)] bg-black dark:bg-white transition duration-300 ease-in-out mb-10">
+      <div className="container text-white dark:text-black">
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center text-white dark:text-black">
           Blog
         </h1>

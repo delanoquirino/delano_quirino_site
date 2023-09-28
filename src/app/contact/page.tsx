@@ -16,7 +16,7 @@ const Contact = () => {
   }, []);
   return (
     <main className="min-h-[calc(100vh-15rem)] bg-black dark:bg-white transition duration-300 ease-in-out">
-      <div className="max-w-7xl mx-auto flex justify-center items-center py-16">
+      <div className="container flex justify-center items-center py-16">
       
         <div >
           
