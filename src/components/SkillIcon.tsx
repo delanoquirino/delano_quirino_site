@@ -17,60 +17,60 @@ export const SkillIcon = () => {
           id: 1,
           src: html,
           title: "HTML",
-          style: "orange-500",
+          style: "[#F97316]",
         },
         {
           id: 2,
           src: css,
           title: "CSS",
-          style: "blue-500",
+          style: "[#3B82F6]",
         },
         {
           id: 3,
           src: javascript,
           title: "JavaScript",
-          style: "yellow-500",
+          style: "[#EFD81D]",
         },
         {
           id: 4,
           src: reactImage,
           title: "React",
-          style: "blue-600",
+          style: "[#61DBFB]",
         },
         {
           id: 5,
           src: tailwind,
           title: "Tailwind",
-          style: "#38BDF8",
+          style: "[#38BDF8]",
         },
         {
           id: 6,
           src: nextjs,
           title: "Next JS",
-          style: "gray-300",
+          style: "[#D1D5DB]",
         },
         {
           id: 7,
           src: github,
           title: "GitHub",
-          style: "gray-300",
+          style: "[#D1D5DB]",
         },
         {
           id: 8,
           src: chakra,
           title: "ChakraUI",
-          style: "#3CC7BE",
+          style: "[#3CC7BE]",
         },
         {
           id: 9,
           src: typescript,
           title: "Typescript",
-          style: "blue-500",
+          style: "[#60A5FA]",
         },{
           id: 10,
           src: jest,
           title: "Jest",
-          style: "#99425B",
+          style: "[#99425B]",
         },
       ];
   return (
@@ -80,9 +80,9 @@ export const SkillIcon = () => {
         className="w-full grid grid-cols-2 sm:grid-cols-3 gap-7 text-center sm:px-4" 
       >
         {techs.map(({ id, src, title, style }) => (
-      <div  key={id}  className={`hover:scale-105 duration-500 p-1 rounded-lg shadow-lg shadow-[${style}] cursor-pointer  hover:bg-${style}`}>
+      <div  key={id}  className={`hover:scale-105 duration-500 p-2 rounded-lg shadow-xl shadow-${style} cursor-pointer`}>
         <Image src={src} alt="Icone de Skill" className="w-7 mx-auto" />
-        <p className="text-base sm:text-base md:text-lg mt-1">{title}</p>
+        <p className="text-xs sm:text-sm md:text-base mt-1 font-bold">{title}</p>
       </div>
         ))}
       </div>
