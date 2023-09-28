@@ -2,8 +2,6 @@
 
 import CardProject from "@/components/CardProject";
 
-import { Divider } from "antd";
-
 import projects from "@/utils/projects";
 import { useEffect } from "react";
 import AOS from "@/animation/aos";
