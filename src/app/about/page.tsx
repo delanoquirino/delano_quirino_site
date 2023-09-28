@@ -30,8 +30,8 @@ const About = () => {
           </p>
         </div>
         <div className="flex flex-col justify-between gap-4 mx-auto md:flex-row mt-10">
-          <div className="w-full md:w-[65%]" data-aos="fade-right">
-            <h2 className="mb-5 md:mb-10 text-2xl sm:text-3xl md:text-4xl font-semibold text-center">
+          <div className="w-full md:w-[60%]" data-aos="fade-right">
+            <h2 className="mb-5 md:mb-10 text-xl sm:text-2xl md:text-3xl font-semibold text-center">
               Conheça-me!
             </h2>
             <p className="text-base sm:text-lg md:text-xl">
@@ -56,7 +56,7 @@ const About = () => {
             </p>
           </div>
           <div data-aos="fade-left" className="mb-10 md:mb-0">
-            <h2 className="mb-10 text-2xl sm:text-3xl md:text-4xl font-semibold mt-10 md:mt-0 text-center">
+            <h2 className="mb-10 text-xl sm:text-2xl md:text-3xl font-semibold mt-10 md:mt-0 text-center">
               Minhas Habilidades
             </h2>
             <div data-aos="fade-left">
