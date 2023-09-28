@@ -13,13 +13,13 @@ export default function Home() {
     });
   }, []);
   return (
-    <main className="h-[calc(100vh-4rem)] bg-black dark:bg-white dark:text-black transition duration-300 ease-in-out ">
+    <main className="min-h-[calc(100vh-4rem)] bg-black dark:bg-white dark:text-black transition duration-300 ease-in-out flex items-center justify-center ">
       <div
         data-aos="fade-up"
         data-aos-offset="100"
         className="container flex flex-col items-center justify-center gap-10"
       >
-        <h1 className="text-white dark:text-slate-600 text-3xl sm:text-5xl md:text-6xl font-bold">
+        <h1 className="text-white dark:text-slate-600 text-5xl md:text-6xl font-bold">
           Olá! Eu me Chamo Delano
         </h1>
         <p className="text-slate-500 sm:text-lg md:text-xl">

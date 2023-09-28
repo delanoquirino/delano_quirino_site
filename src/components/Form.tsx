@@ -28,7 +28,7 @@ const Form = () => {
           id=""
           cols={20}
           rows={10}
-          className="outline-none border-b border-slate-300 rounded-lg"
+          className="p-2 outline-none border-b border-slate-300 rounded-lg"
         ></textarea>
         <button
           type="submit"

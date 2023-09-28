@@ -16,8 +16,8 @@ type BlogSectionProps = {
 export const PageBlog = ( {blogInfo}: BlogSectionProps) => {
   console.log(blogInfo)
   return (
-    <main className="min-h-[calc(100vh-4rem)] bg-black dark:bg-white transition duration-300 ease-in-out mb-10">
-      <div className="container text-white dark:text-black">
+    <main className="min-h-[calc(100vh-4rem)] bg-black dark:bg-white transition duration-300 ease-in-out pt-20 pb-10">
+      <div className="container text-white dark:text-black ">
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center text-white dark:text-black">
           Blog
         </h1>
@@ -35,6 +35,7 @@ export const PageBlog = ( {blogInfo}: BlogSectionProps) => {
                   objectFit="cover"
                   alt=""
                 />
+                
               </div>
               <div className="flex flex-1 h-[334px] flex-col gap-6 ">
                 <h2 className="font-bold text-xl sm:text-2xl md:text-3xl ">

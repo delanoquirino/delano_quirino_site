@@ -77,7 +77,7 @@ export const SkillIcon = () => {
     
    
       <div
-        className="w-full grid grid-cols-2 sm:grid-cols-3 gap-7 text-center sm:px-4" 
+        className="w-full grid gri-cols-1 min-[350px]:grid-cols-2 sm:grid-cols-3 gap-7 text-center sm:px-4" 
       >
         {techs.map(({ id, src, title, style }) => (
       <div  key={id}  className={`hover:scale-105 duration-500 p-2 rounded-lg shadow-xl shadow-${style} cursor-pointer`}>

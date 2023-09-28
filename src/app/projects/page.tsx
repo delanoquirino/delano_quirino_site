@@ -1,26 +1,16 @@
-"use client";
 
 import CardProject from "@/components/CardProject";
 
 import projects from "@/utils/projects";
-import { useEffect } from "react";
-import AOS from "@/animation/aos";
+
 
 const Projects = () => {
-  useEffect(() => {
-    AOS.init({
-      offset: 100,
-      duration: 800,
-      easing: "ease-in-out",
-      once: true,
-    });
-  }, []);
+  
   return (
-    <main className="min-h-[calc(100vh-4rem)] bg-black dark:bg-white mb-10 md:mb-0">
+    <main className="min-h-[calc(100vh-4rem)] bg-black dark:bg-white pt-20 pb-10">
       <div className="container">
         <h1
-          data-aos="fade-down"
-          data-aos-offset="100"
+     
           className="text-3xl sm:text-4xl md:text-5xl font-bold text-center text-white dark:text-black"
         >
           Projects

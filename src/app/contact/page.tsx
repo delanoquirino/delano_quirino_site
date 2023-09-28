@@ -15,10 +15,10 @@ const Contact = () => {
     });
   }, []);
   return (
-    <main className="min-h-[calc(100vh-15rem)] bg-black dark:bg-white transition duration-300 ease-in-out">
-      <div className="container flex justify-center items-center py-16">
+    <main className="min-h-[calc(100vh-4rem)] bg-black dark:bg-white transition duration-300 ease-in-out ">
+      <div className="container flex justify-center items-center">
       
-        <div >
+        <div  className=" mt-20">
           
           <h1
             data-aos="fade-down"

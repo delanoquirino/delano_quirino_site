@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import AOS from "@/animation/aos";
 import { SkillIcon } from "@/components/SkillIcon";
@@ -9,22 +9,26 @@ const About = () => {
     AOS.init({
       offset: 100,
       duration: 800,
-      easing: 'ease-in-out',
+      easing: "ease-in-out",
       once: true,
     });
   }, []);
   return (
     <main className="min-h-[calc(100vh-4rem)] bg-black dark:bg-white">
-      <div className="container flex flex-col justify-center items-center bg-black text-white dark:bg-white dark:text-black ">
-        <div
-          data-aos="fade-down"
-          data-aos-offset="100"
-          className="flex flex-col justify-center items-center gap-4"
-        >
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-start">
+      <div className="container flex flex-col justify-center items-center text-white dark:text-black">
+        <div className="flex flex-col justify-center items-center gap-4 mt-20">
+          <h1
+            data-aos="fade-down"
+            data-aos-offset="100"
+            className="text-3xl sm:text-4xl md:text-5xl font-bold text-start"
+          >
             About
           </h1>
-          <p className="text-base sm:text-lg md:text-xl">
+          <p
+            data-aos="fade-down"
+            data-aos-offset="150"
+            className="text-base sm:text-lg md:text-xl"
+          >
             Aqui você encontrará mais informações sobre mim e quais minhas
             habilidades relacionadas ao desenvolvimento web.
           </p>
