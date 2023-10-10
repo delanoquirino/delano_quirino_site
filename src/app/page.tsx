@@ -24,7 +24,7 @@ export default function Home() {
         </h1>
         <p className="text-slate-500 sm:text-lg md:text-xl">
           Sou desenvolvedor front-end e este é o meu site. Aqui você conhecerá
-          minha jornada e projetos como desenvolvedor front-end.
+          minha jornada e projetos como Software Developer.
         </p>
         <button
           className="text-white text-base sm:text-lg md:text-xl w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-sky-500 cursor-pointer transition duration-300 ease-in-out hover:scale-110 hover:brightness-125"
