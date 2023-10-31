@@ -34,11 +34,7 @@ export default function Home() {
         </button>
         <a
           className="text-cyan-500 text-base sm:text-lg md:text-xl"
-<<<<<<< HEAD
           href="https://drive.google.com/file/d/1L4TMWwV_-lc3cvImLlgLnLLeib2hJSFz/view?usp=sharing"
-=======
-          href="https://drive.google.com/file/d/1zJB9soxH7G50RarayoG-V8JgHRuyzbcz/view?usp=sharing"
->>>>>>> 190a627be2626c46220cb9b91df0578fa0b09410
           target="_blank"
           data-aos="fade-left"
         >
