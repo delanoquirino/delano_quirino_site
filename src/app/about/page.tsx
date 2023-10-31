@@ -30,7 +30,7 @@ const About = () => {
             className="text-base sm:text-lg md:text-xl"
           >
             Aqui você encontrará mais informações sobre mim e quais minhas
-            habilidades relacionadas ao desenvolvimento web.
+            habilidades como Software Developer.
           </p>
         </div>
         <div className="flex flex-col justify-between gap-4 mx-auto md:flex-row md:py-16">
@@ -39,7 +39,7 @@ const About = () => {
               Conheça-me!
             </h2>
             <p className="text-base sm:text-lg md:text-xl">
-              Sou um desenvolvedor web frontend apaixonado por construir
+              Sou um Software Developer apaixonado por construir
               interfaces para sites e aplicativos. Meus projetos você pode
               conferir na page Portfolio
             </p>
@@ -49,7 +49,7 @@ const About = () => {
               e utilizar novas tecnologias para aprimorar minhas habilidades.
               Trabalho com frameworks populares, como React.js e Next, e estou
               familiarizado com o desenvolvimento responsivo e a criação de
-              interfaces amigáveis e intuitivas.
+              interfaces amigáveis e intuitivas. Também tenho alguma experiência com o ambiente de desenvolvimento Node.js. Utilizei o Node.js para criar aplicativos de servidor e trabalhei com pacotes npm para gerenciar dependências. Isso me permitiu desenvolver tanto o lado do cliente quanto o lado do servidor de aplicativos da web, proporcionando uma compreensão completa do desenvolvimento full-stack.
             </p>
             <br className="hidden md:block" />
             <p className="text-base sm:text-lg md:text-xl hidden md:block">
