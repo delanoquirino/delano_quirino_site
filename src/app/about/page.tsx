@@ -16,7 +16,7 @@ const About = () => {
   return (
     <main className="min-h-[calc(100vh-4rem)] bg-black dark:bg-white">
       <div className="container flex flex-col justify-center items-center text-white dark:text-black">
-        <div className="flex flex-col justify-center items-center gap-4 mt-20">
+        <div className="flex flex-col justify-center items-center gap-4 mt-10">
           <h1
             data-aos="fade-down"
             data-aos-offset="100"

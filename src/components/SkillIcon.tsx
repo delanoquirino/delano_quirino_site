@@ -9,6 +9,7 @@ import tailwind from "../../public/iconskill/tailwind.png";
 import chakra from "../../public/iconskill/chakra.png";
 import typescript from "../../public/iconskill/typescript.png";
 import jest from "../../public/iconskill/jest.png";
+import node from "../../public/iconskill/node.png";
 import Image from "next/image";
 
 export const SkillIcon = () => {
@@ -72,15 +73,21 @@ export const SkillIcon = () => {
           title: "Jest",
           style: "[#99425B]",
         },
+        {
+          id: 11,
+          src: node,
+          title: "Node",
+          style: "##90C53F",
+        },
       ];
   return (
-    
+      
    
       <div
         className="w-full grid gri-cols-1 min-[350px]:grid-cols-2 sm:grid-cols-3 gap-7 text-center sm:px-4" 
       >
         {techs.map(({ id, src, title, style }) => (
-      <div  key={id}  className={`hover:scale-105 duration-500 p-2 rounded-lg shadow-xl shadow-${style} cursor-pointer`}>
+      <div  key={id}  className={`hover:scale-105 duration-500 p-2 rounded-lg shadow-xl bg-[${style}] cursor-pointer`}>
         <Image src={src} alt="Icone de Skill" className="w-7 mx-auto" />
         <p className="text-xs sm:text-sm md:text-base mt-1 font-bold">{title}</p>
       </div>

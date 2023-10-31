@@ -7,7 +7,7 @@ import projects from "@/utils/projects";
 const Projects = () => {
   
   return (
-    <main className="min-h-[calc(100vh-4rem)] bg-black dark:bg-white pt-20 pb-10">
+    <main className="min-h-[calc(100vh-4rem)] bg-black dark:bg-white py-10">
       <div className="container">
         <h1
      
